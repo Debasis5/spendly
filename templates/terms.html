@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="auth-section" style="align-items: flex-start; justify-content: center; padding: 4rem 2rem;">
+    <div style="width: 100%; max-width: 720px;">
+
+        <h1 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--ink); margin-bottom: 0.5rem;">Terms and Conditions</h1>
+        <p style="font-size: 0.85rem; color: var(--ink-faint); margin-bottom: 3rem;">Last updated: April 15, 2026</p>
+
+        <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">1. Acceptance of Terms</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    By accessing or using Spendly, you agree to be bound by these Terms and Conditions. If you do not agree to
+                    all of these terms, please do not use the service. Your continued use of Spendly after any changes to these
+                    terms constitutes your acceptance of the revised terms.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">2. Use of Service</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    Spendly is a personal expense tracking tool intended for individual, non-commercial use. You agree to use
+                    the service only for lawful purposes and in a manner consistent with all applicable local, national, and
+                    international laws and regulations. You must not misuse, disrupt, or attempt to gain unauthorised access to
+                    any part of the service.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">3. User Data</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    You retain ownership of all expense data you enter into Spendly. We do not sell, share, or disclose your
+                    personal financial information to third parties. Data is stored locally on the server running your instance
+                    of Spendly. You are responsible for maintaining the confidentiality of your account credentials and for all
+                    activity that occurs under your account.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">4. Limitations of Liability</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    Spendly is provided "as is" without warranties of any kind, either express or implied. We do not guarantee
+                    that the service will be uninterrupted, error-free, or completely secure. In no event shall Spendly or its
+                    contributors be liable for any indirect, incidental, special, or consequential damages arising out of or in
+                    connection with your use of the service, even if advised of the possibility of such damages.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">5. Changes to Terms</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    We reserve the right to modify these Terms and Conditions at any time. When we do, we will update the
+                    "Last updated" date at the top of this page. We encourage you to review this page periodically to stay
+                    informed about any changes. Continued use of Spendly after modifications are posted constitutes your
+                    acceptance of the updated terms.
+                </p>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+            <a href="{{ url_for('landing') }}" style="font-size: 0.9rem; color: var(--accent); font-weight: 500;">← Back to home</a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
