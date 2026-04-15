@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="auth-section" style="align-items: flex-start; justify-content: center; padding: 4rem 2rem;">
+    <div style="width: 100%; max-width: 720px;">
+
+        <h1 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--ink); margin-bottom: 0.5rem;">Privacy Policy</h1>
+        <p style="font-size: 0.85rem; color: var(--ink-faint); margin-bottom: 3rem;">Last updated: April 15, 2026</p>
+
+        <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">1. Data We Collect</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    When you create an account, we collect basic information such as your name and email address. While using
+                    Spendly, we also store the expense records you enter — including amounts, categories, dates, and any
+                    descriptions you provide. We do not collect payment information, government IDs, or any sensitive personal
+                    data beyond what is needed to run the service.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">2. How We Use Your Data</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    Your data is used solely to provide and improve the Spendly service. This includes displaying your expense
+                    history, generating spending summaries, and maintaining your account. We do not use your data for advertising,
+                    profiling, or any purpose beyond operating the app for your benefit. We will never sell your personal
+                    information to third parties.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">3. Data Storage</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    All data is stored in a local SQLite database on the server running your instance of Spendly. Passwords are
+                    stored as secure hashes and are never stored in plain text. You are responsible for the security of the
+                    server environment where Spendly is hosted. We recommend regular backups and keeping your server software
+                    up to date to protect your data.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">4. Third Party Services</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    Spendly loads fonts from Google Fonts via an external request when pages are loaded. This means Google's
+                    servers may log your IP address as part of that request. Beyond this, Spendly does not integrate with or
+                    send your data to any third-party analytics, advertising, or tracking services. We aim to keep external
+                    dependencies to a minimum.
+                </p>
+            </div>
+
+            <div>
+                <h2 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.75rem;">5. Contact Us</h2>
+                <p style="font-size: 0.95rem; color: var(--ink-muted); line-height: 1.75;">
+                    If you have any questions or concerns about this Privacy Policy or how your data is handled, please reach
+                    out to us. As an open-source project, you are also welcome to review the source code directly to verify
+                    how your data is stored and processed. Transparency is a core part of how Spendly is built.
+                </p>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+            <a href="{{ url_for('landing') }}" style="font-size: 0.9rem; color: var(--accent); font-weight: 500;">← Back to home</a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
