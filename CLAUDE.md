@@ -48,6 +48,13 @@ spendly/
 
 ---
 
+## Currency
+
+- All amounts are in **INR (₹)** only — no multi-currency support, no conversion, no other currency symbols
+- Display amounts with the `₹` symbol, never `$`, `€`, or generic labels like "Amount"
+
+---
+
 ## Tech constraints
 
 - **Flask only** — no FastAPI, no Django, no other web frameworks
